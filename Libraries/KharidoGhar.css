@@ -1,0 +1,226 @@
+body{
+font-family:century gothic;
+}
+
+#top1 span{
+	position: absolute;
+	width:30px;
+	height:30px;
+	line-height: 30px;
+	background: #393;
+	color: white;
+	text-align:center;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+}
+#top1 input{
+width: 100%;
+text-indent: 40px;	
+border-radius: 10px;
+border: none;
+outline: none;
+background: #333;
+height: 30px;
+line-height: 30px;
+color: white;
+transition: .5s;
+}
+#top1 input:focus{
+	background: none;
+	letter-spacing: 5px;
+}
+#top1,#top2{
+	background: black;
+	color: white;
+	padding: 5px 5px;
+}
+#mainlogo{
+	width: 90px;
+	height: 60px;
+}
+.icon-bar {
+	width: 22px; 
+	height: 2px;
+	background-color: #B6B6B6;
+	display: block;
+	transition: all 0.2s;
+	margin-top: 4px;
+}
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+  background:crimson;
+  transition:1s;
+}
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+ .navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+  background: crimson;
+  transition:.5s;
+}
+ 
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);  
+  background: black;
+}
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  background:black;
+}
+ 
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+  background:black;
+}
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+#cc{
+	background: rgba(0,0,0,.8);
+	color: white;
+	font-size: 20px;
+	padding: 5px;
+}
+#mainnav a{
+	font-size: 15px;
+}
+marquee img{
+	width:80px;
+	height: 60px;
+}
+#poploc{
+	background: linear-gradient(0deg,green,black);
+	-webkit-background-clip: text;
+	text-fill-color: transparent;
+	color: transparent;
+}
+#wel1{
+	width:100%;
+	height: 50vh;
+	position:fixed;
+	background: #3c0;
+	color: white;
+	font-size: 5vw;
+	line-height: 50vh;
+	text-align:center;
+	bottom: 0;
+}
+#wel2{
+	width:100%;
+	height: 50vh;
+	position:fixed;
+	background: white;
+	color:#3c0;
+	font-size: 10vw;
+	line-height: 50vh;
+	text-align:center;
+	top: 0;
+}
+#wel2 img{
+	width: 50%;
+	height: 60%;
+}
+#card{
+	transition: .5s;
+}
+#card:hover{
+	box-shadow: 0 0 15px 2px silver;
+	transform: scale(1.01);
+
+}
+
+#mainform{
+	width:100%;
+	color:white;
+	height: auto;
+	background: linear-gradient(45deg,green,black);
+	background-size: cover;
+	text-align:center;
+}
+#mainform input{
+border-radius: 20px;
+width: 50%;	
+color: green;
+height: 40px;
+line-height: 40px;
+border: none;
+outline: none;
+border: green 1px solid;
+padding-left: 20px;
+}
+
+#mainform select{
+	background: white;
+	height: 40px;
+	line-height: 40px;
+	color: green;
+	border: 1px green solid;
+	width: 50%;
+}
+#agents{
+	width:100%;
+	font-size: 10vw;
+	padding: 5px 0;
+	text-align:center;
+	font-family: times;
+	background: linear-gradient(0deg,black,lawngreen);
+	-webkit-background-clip: text;
+	color: transparent;
+}
+#agentprofile{
+	padding: 30px 4px;
+	transition: .5s;
+	border: 1px solid silver;
+}
+#agentprofile:hover{
+		box-shadow: 0 0 10px 2px rgba(0,0,0,.4);
+	background: rgba(0,0,0,.05);
+}
+#overview{
+	width:100%;
+	height: 50vw;
+	background: url(../Images/Wallpaper/five_star_review_643956786-1080x627.jpg) fixed center no-repeat;
+	background-size: cover;
+}
+#overviewp{
+	background: url(../Images/Wallpaper/five_star_review_643956786-1080x627.jpg) fixed center no-repeat;
+	background-size: cover;
+	font-size:10vw;
+	text-align:center;
+	-webkit-background-clip: text;
+	color: transparent;
+	padding: 10px 0;
+}
+#related_to_article{
+width:100%;
+height: auto;
+background: url(../Images/Wallpaper/New-York-Wallpaper-Background-22.jpg) center no-repeat fixed;
+background-size: cover;	
+}
+#article{
+	transition: .5s;
+	background: rgba(0,10,0,.8);
+	color: white;
+}
+#article:hover{
+	background: rgba(255,255,255,.8);
+	color:black;
+}
+
+
+
+
+
+
+
+@media (max-width:500px){
+#agentprofile{width:80%;}	
+}

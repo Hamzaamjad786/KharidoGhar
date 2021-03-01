@@ -1,0 +1,809 @@
+<!doctype HTML>
+<html lang="en-US">
+
+<!--	Project Name:	KharidoGhar;
+		Members:		Hamza Amjad,Sufyan Khan
+        Start Date: 	13-April-2019;
+        End Date: 		---;
+-->
+
+					<!-- Head  Section by Hamza Amjad -->
+<head>
+	<title>KharidoGhar - Plots</title>
+	<link rel="shortcut icon" href="Images/Icons/KharidoGhar.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#fff">
+    
+ 
+ 					<!---    Libraries and Other sources  --->
+                    
+                    
+<!--  External CSS file -->
+	<link rel="stylesheet" href="Libraries/KharidoGhar.css" type="text/css">
+    
+<!-- Bootstrap CSS File -->
+	<link rel="stylesheet" href="Libraries/bootstrap.min.css" type="text/css">
+    
+<!--  External JS File  -->
+	<script src="Libraries/KharidoGhar.js" type="text/javascript"></script>
+    
+<!--   jQuery File    --->
+	<script src="Libraries/jQuery.min.js" type="text/javascript" ></script>
+    
+<!--   Popper.JS File --->
+	<script src="Libraries/Popper.min.js" type="text/javascript"></script> 
+
+<!--   Bootstrap JS File   --->
+	<script src="Libraries/bootstrap.min.js" type="text/javascript"></script>
+<!-- Angular.JS File -->
+	<script src="Libraries/angular.min.js"></script>
+<!--  Tooltip.JS file -->
+	<script src="Libraries/tooltip.min.js"></script>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!--   FontAwesome CDN    ---->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+ 
+ 
+ 
+ 
+ 
+</head>
+
+
+ <!--Signup modal-->
+<div class="modal fade" id="darkModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog form-dark" role="document">
+    <!--Content-->
+    <div class="modal-content card card-image" style="background-image:url(Images/Icons/cb-background-100-11552115257klwkggw3u2.jpg)">
+      <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
+        <!--Header-->
+        <div class="modal-header text-center pb-4">
+          <h3 class="modal-title white-text font-weight-bold" id="myModalLabel"><strong>SIGN</strong> <a
+              class=" font-weight-bold" ><strong> UP</strong></a></h3>
+          <button type="button" class="close white-text"  aria-label="Close">
+            <span aria-hidden="true" data-dismiss="modal">&times;</span>
+          </button>
+        </div>
+        <!--Body-->
+        <div class="modal-body">
+          <!--Body-->
+          <div class="md-form mb-5">
+            <input type="email" id="Form-email5" class="form-control validate white-text">
+            <label data-error="wrong" data-success="right" for="Form-email5">Your email</label>
+          </div>
+
+          <div class="md-form pb-3">
+            <input type="password" id="Form-pass5" class="form-control validate white-text">
+            <label data-error="wrong" data-success="right" for="Form-pass5">Your password</label>
+            <div class="form-group mt-4">
+              <input class="form-check-input" type="checkbox" id="checkbox624">
+              <label for="checkbox624" class="white-text form-check-label">Accept the<a href="#" class="green-text font-weight-bold">
+                  Terms and Conditions</a></label>
+            </div>
+          </div>
+
+          <!--Grid row-->
+          <div class="row d-flex align-items-center mb-4">
+
+            <!--Grid column-->
+            <div class="text-center mb-3 col-md-12">
+<button type="button" class="btn btn-success btn-block btn-rounded z-depth-1" data-dismiss="modal" onClick="signup();">Sign up</button>            </div>
+            <!--Grid column-->
+
+          </div>
+          <!--Grid row-->
+
+          <!--Grid row-->
+          <div class="row">
+            <div class="col-md-12">
+              <p class="font-small white-text d-flex justify-content-end">Have an account? <a href="#" class="green-text ml-1 font-weight-bold">
+                  Log in</a></p>
+            </div>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<script>
+
+
+function signup(){
+	var email = document.getElementById('Form-email5').value;
+	var password = document.getElementById('Form-pass5').value;
+	
+	if(email=="Hamzaamjad496@gmail.com" & password==123456789){
+		alert("Welcome Hamza Amjad");
+		document.getElementById('subtn').innerHTML = "Hamza Amjad";
+		document.getElementById('subtn1').style.display = "none";
+		document.getElementById('subtn2').style.display = "none";
+	} else if (email=="sufyan.khan@gmail.com" & password==0123456789){
+		alert("Welcome Sufyan Khan");
+		document.getElementById('subtn').innerHTML = "Sufyan Khan";
+		document.getElementById('subtn1').style.display = "none";
+		document.getElementById('subtn2').style.display = "none";
+	}  else {
+		alert("User not found");	
+	}
+	
+};
+
+</script>
+
+
+					<!--        Body  Section     ---->
+                    
+<body >
+					
+<div id="top" class="container-fluid sticky-top">
+		<div class="row">
+    		<div class="container col-xxl-5 col-xl-5 col-lg-5 col-md-6 col-sm-4" id="top1">
+            	<span class="fa fa-search"></span>
+                <input type="search" placeholder="Search Now" list="searches">
+                <datalist id="searches">
+<option value="Apartment"><option value="Bahadurabab"> <option value="Clifton"><option value="DHA"><option value="Karachi"><option value="House"><option value="Islamabad"><option value="Bungalow"><option value="Agents"><option value="Quetta"><option value="KharidoGhar"><option value="Zameen"><option value="Sindh"><option value="Plot"><option value="New Projects"><option value="PECHS block 2"><option value="Building"><option value="Faisal masjid"><option value="X Block"><option value="Saddar"><option value="Head office"><option value="Sq/Yards"><option value="Venture Real Estate">
+
+
+
+
+
+
+
+
+
+                </datalist>
+            </div>
+
+    		<div class="container col-xxl-7 col-xl-7 col-lg-7 col-md-6 col-sm-8 " id="top2">
+            <div class="float-right" id="top2item">
+            <select class="btn btn-success btn-sm">
+            <option value="English">Pakistan</option>
+            <option value="English">KSA</option>
+            <option value="English">UAE</option>
+            <option value="English">Morocco</option>
+            </select>
+            <select class="btn btn-success btn-sm">
+            <option value="English">English</option>
+            <option value="English">Urdu</option>
+            <option value="English">Arabic</option>
+            <option value="English">Sindhi</option>
+            <option value="English">Hindi</option>
+            <option value="English">Chinese</option>
+            <option value="English">Bengali</option>
+            </select>
+			<a href="../Untitled-1.html" class="btn btn-sm btn-success" data-toggle="modal" data-target="#darkModalForm" id="subtn">Sign Up <i class="fa fa-user"></i></a>
+
+            </div>
+            </div>
+                
+        </div>
+</div>
+<nav class="navbar navbar-light bg-light navbar-expand-lg sticky-top">
+<img src="Images/Icons/KharidoGhar.png" id="mainlogo" class="navbar-brand" title="KharidoGhar">
+	<button class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainnav" type="button" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation" style="border:none;outline:none;">
+		<span class="icon-bar top-bar"></span>
+	<span class="icon-bar middle-bar"></span>
+	<span class="icon-bar bottom-bar"></span>				
+	</button>
+<div class="collapse navbar-collapse" id="mainnav">
+				<a href="index.html" class="nav-link text-success">Home</a>
+			<a href="Buy.html" class="nav-link text-success">Buy</a>
+            <a href="Rent.html" class="nav-link text-success">Rent</a>
+            <a href="Plots.html" class="nav-link text-success"><b>Plots</b></a>
+            <a href="New Projects.html" class="nav-link text-success">New Projects</a>
+            <a href="Agents.html" class="nav-link text-success">Agents</a>
+            <a href="Area Guides.html" class="nav-link text-success">Area Guides</a>
+            <a href="lndex.html" class="nav-link text-success">Index</a>
+            <a href="Contact Us.html" class="nav-link text-success">Contact Us</a>
+  
+
+</div>
+
+
+</nav>
+<script>
+  AOS.init();
+</script>
+<section class="container-fluid text-center">
+	<div class="row">
+ 
+		<article class="container col-xl-9 col-lg-9 col-md-9 col-sm-12">
+
+  <!-- 							Card Section       -------->
+  
+  
+  
+  
+   	
+            <div class="card container col-xl-4 col-lg-6 col-md-6 col-sm-12 float-left" id="card">
+            	<div class="card-header">Karachi <small>DHA Phase VI</small></div>
+                
+                <img src="Images/Wallpaper/P1.jpg" style="width:100%;height:auto;">
+                <div class="card-footer pt-2 text-left">
+                <p><b>Price: </b><span class="text-danger font-weight-bold"> 10 Crore</span></p> 
+           		<p class="text-left text-success"> Kingsley Associates Uk</p>
+                <p class="text-left">
+                4 <i class="fas fa-bed pr-2"></i>  4 <i class="fas fa-bath pr-2"></i>  1000 Sq.yds <i class="fas fa-ruler-combined"></i>
+                </p><br>
+                <center>
+                <button class="btn btn-success btn-sm">Call Now</button>
+                <button class="btn btn-danger btn-sm">Email</button>
+                </center>
+                </div>
+           </div>
+
+           
+ <!---               End Card Section         ------>
+  <!-- 							Card Section       -------->
+  
+  
+  
+  
+	
+            <div class="card container col-xl-4 col-lg-6 col-md-6 col-sm-12 float-left" id="card">
+            	<div class="card-header">Karachi <small>DHA Phase VI</small></div>
+                
+                <img src="Images/Wallpaper/P2.jpg" style="width:100%;height:auto;">
+                <div class="card-footer pt-2 text-left">
+                <p><b>Price: </b><span class="text-danger font-weight-bold"> 10 Crore</span></p> 
+                <p class="text-success text-left">Sufyan Associates Pvt Ltd</p>
+                <p class="text-left">
+                4 <i class="fas fa-bed pr-2"></i>  4 <i class="fas fa-bath pr-2"></i>  1000 Sq.yds <i class="fas fa-ruler-combined"></i>
+                </p><br>
+                <center>
+                <button class="btn btn-success btn-sm">Call Now</button>
+                <button class="btn btn-danger btn-sm">Email</button>
+                </center>
+                </div>
+           </div>
+
+           
+ <!---               End Card Section         ------>           
+           
+           
+  <!-- 							Card Section       -------->
+  
+  
+  
+  
+	
+            <div class="card container col-xl-4 col-lg-6 col-md-6 col-sm-12 float-left" id="card">
+            	<div class="card-header">Karachi <small>DHA Phase VI</small></div>
+                
+                <img src="Images/Wallpaper/P3.jpg" style="width:100%;height:auto;">
+                <div class="card-footer pt-2 text-left">
+                <p><b>Price: </b><span class="text-danger font-weight-bold"> 10 Crore</span></p> 
+                <p class="text-success text-left">Sufyan Associates Pvt Ltd</p>
+                <p class="text-left">
+                4 <i class="fas fa-bed pr-2"></i>  4 <i class="fas fa-bath pr-2"></i>  1000 Sq.yds <i class="fas fa-ruler-combined"></i>
+                </p><br>
+                <center>
+                <button class="btn btn-success btn-sm">Call Now</button>
+                <button class="btn btn-danger btn-sm">Email</button>
+                </center>
+                </div>
+           </div>
+
+           
+ <!---               End Card Section         ------>          
+           
+           
+           <!-- 							Card Section       -------->
+  
+  
+  
+  
+	
+            <div class="card container col-xl-4 col-lg-6 col-md-6 col-sm-12 float-left" id="card">
+            	<div class="card-header">Karachi <small>DHA Phase VI</small></div>
+                
+                <img src="Images/Wallpaper/P4.jpg" style="width:100%;height:auto;">
+                <div class="card-footer pt-2 text-left">
+                <p><b>Price: </b><span class="text-danger font-weight-bold"> 10 Crore</span></p> 
+                <p class="text-success text-left">Sufyan Associates Pvt Ltd</p>
+                <p class="text-left">
+                4 <i class="fas fa-bed pr-2"></i>  4 <i class="fas fa-bath pr-2"></i>  1000 Sq.yds <i class="fas fa-ruler-combined"></i>
+                </p><br>
+                <center>
+                <button class="btn btn-success btn-sm">Call Now</button>
+                <button class="btn btn-danger btn-sm">Email</button>
+                </center>
+                </div>
+           </div>
+
+           
+ <!---               End Card Section         ------> 
+           
+           
+           <!-- 							Card Section       -------->
+  
+  
+  
+  
+	
+            <div class="card container col-xl-4 col-lg-6 col-md-6 col-sm-12 float-left" id="card">
+            	<div class="card-header">Karachi <small>DHA Phase VI</small></div>
+                
+                <img src="Images/Wallpaper/P5.jpg" style="width:100%;height:auto;">
+                <div class="card-footer pt-2 text-left">
+                <p><b>Price: </b><span class="text-danger font-weight-bold"> 10 Crore</span></p> 
+                <p class="text-success text-left">Sufyan Associates Pvt Ltd</p>
+                <p class="text-left">
+                4 <i class="fas fa-bed pr-2"></i>  4 <i class="fas fa-bath pr-2"></i>  1000 Sq.yds <i class="fas fa-ruler-combined"></i>
+                </p><br>
+                <center>
+                <button class="btn btn-success btn-sm">Call Now</button>
+                <button class="btn btn-danger btn-sm">Email</button>
+                </center>
+                </div>
+           </div>
+
+           
+ <!---               End Card Section         ------> 
+ <!-- 							Card Section       -------->
+  
+  
+  
+  
+	
+            <div class="card container col-xl-4 col-lg-6 col-md-6 col-sm-12 float-left" id="card">
+            	<div class="card-header">Karachi <small>DHA Phase VI</small></div>
+                
+                <img src="Images/Wallpaper/P6.jpg" style="width:100%;height:auto;">
+                <div class="card-footer pt-2 text-left">
+                <p><b>Price: </b><span class="text-danger font-weight-bold"> 10 Crore</span></p> 
+                <p class="text-success text-left">Sufyan Associates Pvt Ltd</p>
+                <p class="text-left">
+                4 <i class="fas fa-bed pr-2"></i>  4 <i class="fas fa-bath pr-2"></i>  1000 Sq.yds <i class="fas fa-ruler-combined"></i>
+                </p><br>
+                <center>
+                <button class="btn btn-success btn-sm">Call Now</button>
+                <button class="btn btn-danger btn-sm">Email</button>
+                </center>
+                </div>
+           </div>
+
+           
+ <!---               End Card Section         ------> 
+ <!-- 							Card Section       -------->
+  
+  
+  
+  
+	
+            <div class="card container col-xl-4 col-lg-6 col-md-6 col-sm-12 float-left" id="card">
+            	<div class="card-header">Karachi <small>DHA Phase VI</small></div>
+                
+                <img src="Images/Wallpaper/P7.jpg" style="width:100%;height:auto;">
+                <div class="card-footer pt-2 text-left">
+                <p><b>Price: </b><span class="text-danger font-weight-bold"> 10 Crore</span></p> 
+                <p class="text-success text-left">Sufyan Associates Pvt Ltd</p>
+                <p class="text-left">
+                4 <i class="fas fa-bed pr-2"></i>  4 <i class="fas fa-bath pr-2"></i>  1000 Sq.yds <i class="fas fa-ruler-combined"></i>
+                </p><br>
+                <center>
+                <button class="btn btn-success btn-sm">Call Now</button>
+                <button class="btn btn-danger btn-sm">Email</button>
+                </center>
+                </div>
+           </div>
+
+           
+ <!---               End Card Section         ------> 
+ <!-- 							Card Section       -------->
+  
+  
+  
+  
+	
+            <div class="card container col-xl-4 col-lg-6 col-md-6 col-sm-12 float-left" id="card">
+            	<div class="card-header">Karachi <small>DHA Phase VI</small></div>
+                
+                <img src="Images/Wallpaper/P8.jpg" style="width:100%;height:auto;">
+                <div class="card-footer pt-2 text-left">
+                <p><b>Price: </b><span class="text-danger font-weight-bold"> 10 Crore</span></p> 
+                <p class="text-success text-left">Sufyan Associates Pvt Ltd</p>
+                <p class="text-left">
+                4 <i class="fas fa-bed pr-2"></i>  4 <i class="fas fa-bath pr-2"></i>  1000 Sq.yds <i class="fas fa-ruler-combined"></i>
+                </p><br>
+                <center>
+                <button class="btn btn-success btn-sm">Call Now</button>
+                <button class="btn btn-danger btn-sm">Email</button>
+                </center>
+                </div>
+           </div>
+
+           
+ <!---               End Card Section         ------> 
+ <!-- 							Card Section       -------->
+  
+  
+  
+  
+	
+            <div class="card container col-xl-4 col-lg-6 col-md-6 col-sm-12 float-left" id="card">
+            	<div class="card-header">Karachi <small>DHA Phase VI</small></div>
+                
+                <img src="Images/Wallpaper/P9.jpg" style="width:100%;height:auto;">
+                <div class="card-footer pt-2 text-left">
+                <p><b>Price: </b><span class="text-danger font-weight-bold"> 10 Crore</span></p> 
+                <p class="text-success text-left">Sufyan Associates Pvt Ltd</p>
+                <p class="text-left">
+                4 <i class="fas fa-bed pr-2"></i>  4 <i class="fas fa-bath pr-2"></i>  1000 Sq.yds <i class="fas fa-ruler-combined"></i>
+                </p><br>
+                <center>
+                <button class="btn btn-success btn-sm">Call Now</button>
+                <button class="btn btn-danger btn-sm">Email</button>
+                </center>
+                </div>
+           </div>
+
+           
+ <!---               End Card Section         ------> 
+ <!-- 							Card Section       -------->
+  
+  
+  
+  
+	
+            <div class="card container col-xl-4 col-lg-6 col-md-6 col-sm-12 float-left" id="card">
+            	<div class="card-header">Karachi <small>DHA Phase VI</small></div>
+                
+                <img src="Images/Wallpaper/P10.jpg" style="width:100%;height:auto;">
+                <div class="card-footer pt-2 text-left">
+                <p><b>Price: </b><span class="text-danger font-weight-bold"> 10 Crore</span></p> 
+                <p class="text-success text-left">Sufyan Associates Pvt Ltd</p>
+                <p class="text-left">
+                4 <i class="fas fa-bed pr-2"></i>  4 <i class="fas fa-bath pr-2"></i>  1000 Sq.yds <i class="fas fa-ruler-combined"></i>
+                </p><br>
+                <center>
+                <button class="btn btn-success btn-sm">Call Now</button>
+                <button class="btn btn-danger btn-sm">Email</button>
+                </center>
+                </div>
+           </div>
+
+           
+ <!---               End Card Section         ------> 
+ <!-- 							Card Section       -------->
+  
+  
+  
+  
+	
+            <div class="card container col-xl-4 col-lg-6 col-md-6 col-sm-12 float-left" id="card">
+            	<div class="card-header">Karachi <small>DHA Phase VI</small></div>
+                
+                <img src="Images/Wallpaper/P11.jpg" style="width:100%;height:auto;">
+                <div class="card-footer pt-2 text-left">
+                <p><b>Price: </b><span class="text-danger font-weight-bold"> 10 Crore</span></p> 
+                <p class="text-success text-left">Sufyan Associates Pvt Ltd</p>
+                <p class="text-left">
+                4 <i class="fas fa-bed pr-2"></i>  4 <i class="fas fa-bath pr-2"></i>  1000 Sq.yds <i class="fas fa-ruler-combined"></i>
+                </p><br>
+                <center>
+                <button class="btn btn-success btn-sm">Call Now</button>
+                <button class="btn btn-danger btn-sm">Email</button>
+                </center>
+                </div>
+           </div>
+
+           
+ <!---               End Card Section         ------> 
+ <!-- 							Card Section       -------->
+  
+  
+  
+  
+	
+            <div class="card container col-xl-4 col-lg-6 col-md-6 col-sm-12 float-left" id="card">
+            	<div class="card-header">Karachi <small>DHA Phase VI</small></div>
+                
+                <img src="Images/Wallpaper/P12.jpg" style="width:100%;height:auto;">
+                <div class="card-footer pt-2 text-left">
+                <p><b>Price: </b><span class="text-danger font-weight-bold"> 10 Crore</span></p> 
+                <p class="text-success text-left">Sufyan Associates Pvt Ltd</p>
+                <p class="text-left">
+                4 <i class="fas fa-bed pr-2"></i>  4 <i class="fas fa-bath pr-2"></i>  1000 Sq.yds <i class="fas fa-ruler-combined"></i>
+                </p><br>
+                <center>
+                <button class="btn btn-success btn-sm">Call Now</button>
+                <button class="btn btn-danger btn-sm">Email</button>
+                </center>
+                </div>
+           </div>
+
+           
+ <!---               End Card Section         ------> 
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+		</article>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+		<aside class="container col-xl-3 col-lg-3 col-md-3 col-sm-12">
+			<img src="Images/Wallpaper/banner.jpg" style="width:100%;height:auto;">
+            <p class="text-justify">
+            The demand for rent spaces and new homes is on the rise. With people moving into the city and new families starting their journey every day, the market is literally asking for new properties. So, take advantage of this opportunity. Keep a neat office space to welcome your clients, but advertise online to catch their interest and direct them to you.
+            </p>
+			<img src="Images/Wallpaper/banner.jpg" style="width:100%;height:auto;">
+            <p class="text-justify">
+            The demand for rent spaces and new homes is on the rise. With people moving into the city and new families starting their journey every day, the market is literally asking for new properties. So, take advantage of this opportunity. Keep a neat office space to welcome your clients, but advertise online to catch their interest and direct them to you.
+            </p>			<img src="Images/Wallpaper/banner.jpg" style="width:100%;height:auto;">
+            <p class="text-justify">
+            The demand for rent spaces and new homes is on the rise. With people moving into the city and new families starting their journey every day, the market is literally asking for new properties. So, take advantage of this opportunity. Keep a neat office space to welcome your clients, but advertise online to catch their interest and direct them to you.
+            </p>
+		</aside>        
+
+
+
+
+
+
+	</div>
+</section>
+
+
+
+
+
+
+
+
+<div data-aos="fade-up" data-aos-duration="500">
+<!-- Footer -->
+<footer class="page-footer font-small text-light pt-4" style="background: black;">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mx-auto">
+
+        <!-- Content -->
+        <h5 class="font-weight-bold mt-3 mb-4">Introduction</h5>
+        <p class="text-justify">A company with extensive experience, record sales & the highest level of service around. Easy property/real estate search for Camden, Rockport, Maine and surrounding towns. Local Knowledge. International Reach. Neighborhoods: The best agents around, Contact us today..</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold  mt-3 mb-4">KharidoGhar</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            Office: A-2, 2nd Floor, Kingsley Tower, Shahra-e-Faisal, Sindh, Pakistan
+          </li>
+          <li>
+           (+92) 0312 - 1187159
+          </li>
+          <li>
+           0800 - 4641364645
+          </li>
+          <li>
+          	info@kharidoGhar.com.pk
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold  mt-3 mb-4">Company</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-success">About Us</a>
+          </li>
+          <li>
+            <a href="#!" class="text-success">Contact Us</a>
+          </li>
+          <li>
+            <a href="#!" class="text-success">Help and Support</a>
+          </li>
+          <li>
+            <a href="#!" class="text-success">Terms of Use</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold  mt-3 mb-4">Connect</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="https://wall.pk/latest-news.aspx" target="_blank" class="text-success">News</a>
+          </li>
+          <li>
+            <a href="https://www.blogger.com/about/?r=1-null_user" target="_blank" class="text-success">Blog</a>
+          </li>
+          <li>
+            <a href="https://www.realestateforums.com/portal/en/home.html" class="text-success">Forum</a>
+          </li>
+          <li>
+            <a href="https://10times.com/top100/real-estate" class="text-success">Expo</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <hr>
+
+  <!-- Call to action -->
+  <ul class="list-unstyled list-inline text-center py-2">
+    <li class="list-inline-item">
+      <h5 class="mb-1" id="subtn1">Register for free</h5>
+    </li>
+    <li class="list-inline-item">
+			<a href="../Untitled-1.html" id="subtn2" class="btn btn-sm btn-success" data-toggle="modal" data-target="#darkModalForm">Sign Up <i class="fa fa-user"></i></a>
+    </li>
+  </ul>
+  <!-- Call to action -->
+
+  <hr>
+
+  <!-- Social buttons -->
+  <ul class="list-unstyled list-inline text-center">
+    <li class="list-inline-item">
+      <a class="btn-floating btn-fb mx-1 text-light" href="https://m.facebook.com" target="_blank">
+        <i class="fab fa-facebook-f"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-tw mx-1 text-light" href="https://twitter.com/" target="_blank">
+        <i class="fab fa-twitter"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-gplus mx-1 text-light" href="https://developers.google.com/+/" target="_blank">
+        <i class="fab fa-google-plus-g"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-li mx-1 text-light" href="https://www.linkedin.com/uas/login" target="_blank">
+        <i class="fab fa-linkedin-in"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-dribbble mx-1 text-light" href="https://dribbble.com/" target="_blank">
+        <i class="fab fa-dribbble"> </i>
+      </a>
+    </li>
+        <li class="list-inline-item">
+
+    </li>
+  </ul>
+  <!-- Social buttons -->
+  <center>
+<a href="https://play.google.com/store/apps" target="_blank">
+<img src="Images/Wallpaper/get-it-on-google-play-png-get-the-espn-app-from-the-google-play-store-to-get-the-latest-sports-scores-news-and-videos-download-the-app-now-606.png" style="width: 150px;height:50px;">
+</a>
+<a href="https://apps.apple.com/us/app/the-world-hd/id364904503" target="_blank">
+<img src="Images/Wallpaper/Icons App Store Google play.png" style="width:150px;height: 50px;">
+</a>
+
+</center>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2018 Copyright:
+    <a href="#" class="text-success"> KharidoGhar.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+       </div>
+
+<button type="button" data-toggle="modal" data-target="#myModal" style="position:fixed;bottom:0;left:0;width:50px;height:50px;background:none;border:none;cursor:pointer">
+<img src="Images/Icons/feedback-icon-round-433ddc5553e50400e15f665622f12f94.png" style="position: absolute;width:100%;height:100%;left:0;bottom:0;">
+</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+        <h4 class="modal-title">Feedbacks and Suggestions</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form onSubmit="//home.php" method="get">
+       <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Enter Username">
+    <div class="input-group-append">
+      <span class="input-group-text bg-success text-light fa fa-user"></span>
+    </div>
+  </div>            
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Your Email">
+    <div class="input-group-append">
+      <span class="input-group-text bg-success text-light fa fa-envelope"></span>
+    </div>
+  </div>
+  <div class="form-group">
+  <label for="comment">Comment:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+</div>
+        <input type="submit" class="btn btn-success btn-sm" value="Submit">
+          <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Close</button>
+          </form>
+        </div>
+        <div class="modal-footer text-center">
+		<p class="text-success">KharidoGhar.com</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+       
+</div> 
+</body>
+</html>
+			<!--  End of Coding -->
